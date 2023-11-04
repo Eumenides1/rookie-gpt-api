@@ -31,7 +31,7 @@ public class WeiXinPortalController {
 
     private Logger logger = LoggerFactory.getLogger(WeiXinPortalController.class);
 
-    @Value("${wx.config.originalid:gh_5ae909f70492}")
+    @Value("${wx.config.originalid:}")
     private String originalId;
 
     @Resource
@@ -49,7 +49,7 @@ public class WeiXinPortalController {
 
         Configuration configuration = new Configuration();
         configuration.setApiHost("https://api.openai.com/");
-        configuration.setApiKey("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");
+        configuration.setApiKey("sk-");
         // 2. 会话工厂
         OpenAiSessionFactory factory = new DefaultOpenAiSessionFactory(configuration);
         // 3. 开启会话
